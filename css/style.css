@@ -1,56 +1,51 @@
-header{
-    
-    background-color: #95E1D3;
-    color: white;
-    text-align: center;
-    padding: 5px;
-    margin: 5px;
-    border-radius:  10px;
-    border: white solid 5px;
-    
-}
-
-body{
-    background-color: #EAFFD0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.input-section{
-    background-color: #F38181;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFC145;
+    margin: 0;
+    padding: 0;
     display: flex;
-    flex-direction: column;
-    padding: 5px;
-    margin: 5px;
-    border-radius:  10px;
-}label{
-    display: block;
-    text-align: center;
-    margin-bottom: 8px;
-    font-weight: bold;
-    font-size: 18px;
-}input{
-    padding: 20px;
-    border: white;
-    border-radius:  10px;
-    outline: none;
-}input:focus{
-    border: #FCE38A solid 5px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-button{
-    padding: 5px 15px;
-    margin: 5px;
-    font-weight: bold;
-    font-size: 14px;
+.container {
+    background-color: #B8B8D1;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    border-radius: 5px;
-    background-color: white;
-    border: none;
-    cursor: pointer;
-}button:hover{
+}
 
-    background-color: rgb(185, 185, 185);
-}button:active{
-    background-color: white;
-    transform: translateY(1px);
+form {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+}
+
+input[type="number"], select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #FF6B6C;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#hasil-konversi {
+    display: none;
+    margin-top: 20px;
 }

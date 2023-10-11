@@ -4,41 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator Suhu</title>
-
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <main>
-        <section>
-            <div class="container">
-                <h1>Kalkulator Suhu</h1>
-                <form id="suhu-form">
-                    <div class="form-group">
-                        <label for="suhu">Masukkan suhu dalam Celsius:</label>
-                        <input type="number" id="suhu" step="any" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="konversi">Pilih satuan suhu:</label>
-                        <select id="konversi">
-                            <option value="celsius">Celsius</option>
-                            <option value="fahrenheit">Fahrenheit</option>
-                        </select>
-                    </div>
-                    <button type="submit">Konversi</button>
-                </form>
-                <div id="hasil-konversi">
-                    <p>Hasil konversi:</p>
-                    <p id="hasil"></p>
-                </div>
-                <div id="rumus-konversi">
-                    <p>Rumus konversi:</p>
-                    <p id="rumus"></p>
-                </div>
+    <div class="container">
+        <h1>Kalkulator Suhu</h1>
+        <form id="suhu-form">
+            <div class="form-group">
+                <label for="suhu">Masukkan suhu dalam Celsius:</label>
+                <input type="number" id="suhu" step="any" required>
             </div>
+            <div class="form-group">
+                <label for="konversi">Pilih satuan suhu:</label>
+                <select id="konversi">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                </select>
+            </div>
+            <button type="submit">Konversi</button>
+        </form>
+        <div id="hasil-konversi">
+            <p>Hasil konversi:</p>
+            <p id="hasil"></p>
+        </div>
+        <div id="rumus-konversi">
+            <p>Rumus konversi:</p>
+            <p id="rumus"></p>
+        </div>
+    </div>
 
-            <script src="script.js"></script>
-        </section>
-    </main>
+    <script src="js/script.js"></script>
 </body>
 </html>
