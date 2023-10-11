@@ -10,21 +10,35 @@
 
 <body>
     <main>
-        <header>
-            <h1>Kalkulator Suhu</h1>
-        </header>
-        <main >
-            <section class="input-section">
-                <label for="kotak-input">Celcius</label>
-                <input id="input-field" type="number" placeholder="0">
-                <div>
-                    <button>Konversi</button>
-                    <button>Reset</button>
-                    <button>Undo</button>
+        <section>
+            <div class="container">
+                <h1>Kalkulator Suhu</h1>
+                <form id="suhu-form">
+                    <div class="form-group">
+                        <label for="suhu">Masukkan suhu dalam Celsius:</label>
+                        <input type="number" id="suhu" step="any" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="konversi">Pilih satuan suhu:</label>
+                        <select id="konversi">
+                            <option value="celsius">Celsius</option>
+                            <option value="fahrenheit">Fahrenheit</option>
+                        </select>
+                    </div>
+                    <button type="submit">Konversi</button>
+                </form>
+                <div id="hasil-konversi">
+                    <p>Hasil konversi:</p>
+                    <p id="hasil"></p>
                 </div>
-            </section>
-        </main>
-           
+                <div id="rumus-konversi">
+                    <p>Rumus konversi:</p>
+                    <p id="rumus"></p>
+                </div>
+            </div>
+
+            <script src="script.js"></script>
+        </section>
     </main>
 </body>
 </html>
