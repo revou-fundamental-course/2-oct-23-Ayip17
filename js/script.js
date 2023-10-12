@@ -15,7 +15,24 @@ document.getElementById("suhu-form").addEventListener("submit", function (e) {
     }
 
     document.getElementById("hasil").textContent = hasil;
-    document.getElementById("rumus").textContent = rumus; // Menampilkan rumus
+    document.getElementById("rumus").textContent = rumus;
     document.getElementById("hasil-konversi").style.display = "block";
-    document.getElementById("rumus-konversi").style.display = "block"; // Menampilkan bagian rumus
+    document.getElementById("rumus-konversi").style.display = "block";
+});
+
+document.getElementById("reset-button").addEventListener("click", function () {
+    document.getElementById("suhu").value = "";
+    document.getElementById("hasil").textContent = "";
+    document.getElementById("rumus").textContent = "";
+    document.getElementById("hasil-konversi").style.display = "none";
+    document.getElementById("rumus-konversi").style.display = "none";
+});
+
+document.getElementById("reverse-button").addEventListener("click", function () {
+    const dropdown = document.getElementById("konversi");
+    if (dropdown.value === "celsius") {
+        dropdown.value = "fahrenheit";
+    } else {
+        dropdown.value = "celsius";
+    }
 });
